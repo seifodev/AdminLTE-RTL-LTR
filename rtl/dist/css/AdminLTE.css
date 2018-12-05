@@ -535,14 +535,28 @@ a:focus {
     }
 }
 
-@media (max-width: 767px) {
 
+
+body:not(.sidebar-collapse) .content,
+body:not(.sidebar-collapse) .content-header > h1
+{
+    margin-right: 0 !important;
+}
+
+@media (min-width: 768px)
+{
+    body:not(.sidebar-collapse) .main-header > .navbar
+    {
+        margin-right: 230px !important;
+    }
+}
+
+@media (max-width: 767px) {
     .content,
     .content-header > h1,
     .main-header > .navbar {
         margin-right: 0 !important;
     }
-
     .sidebar-open .main-sidebar {
         -webkit-transform: translate(-230px, 0);
         -ms-transform: translate(-230px, 0);
